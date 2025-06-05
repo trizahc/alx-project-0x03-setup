@@ -1,9 +1,13 @@
-// interface/index.tsx
+// interface/index.ts
 
+import { ReactNode } from "react";
+
+// For Home page routing
 export interface PageRouteProps {
   pageRoute: string;
 }
 
+// For Button component
 export interface ButtonProps {
   buttonLabel: string;
   buttonSize?: string;
@@ -11,6 +15,7 @@ export interface ButtonProps {
   action?: () => void;
 }
 
+// For Layout component
 export interface LayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
